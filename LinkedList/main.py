@@ -37,15 +37,28 @@ class LinkedList:
 
         cur_node.next = new_node
 
-    def show_list(self):
-        cur_node = self.head
+    def show_list(self, head):
+        if not head:
+            head = self.head
+        cur_node = head
         while cur_node:
             print(f"{cur_node.data}", end='->')
             cur_node = cur_node.next
 
+    def add_to_begining(self, data):
 
-ll_obj = LinkedList()
-ll_obj.add_to_end_of_list(1)
-ll_obj.add_to_end_of_list(2)
-ll_obj.add_to_end_of_list(3)
-ll_obj.show_list()
+        # 10 -> 20 -> 30 -> None
+        new_node = Node(data)
+        new_node.next = self.head
+        self.head = new_node
+
+
+if __name__ == '__main__':
+    list_object = LinkedList()
+    list_object.add_to_end_of_list(1)
+    list_object.add_to_end_of_list(2)
+    list_object.add_to_end_of_list(3)
+    list_object.show_list()
+    print()
+    list_object.add_to_begining(0)
+    list_object.show_list()
