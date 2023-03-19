@@ -1,10 +1,10 @@
 from main import LinkedList
 
 
-def reverse_recusrion(head):
+def reverse_recursion(head):
     if head is None or head.next is None:
         return
-    new_node = reverse_recusrion(head.next)
+    new_node = reverse_recursion(head.next)
     head.next.next = head
     head.next = None
     return new_node
