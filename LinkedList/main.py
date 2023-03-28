@@ -1,11 +1,10 @@
-"""
-
- [data , pointter] -> [data , pointer] -> None
-
-"""
 
 
 class Node:
+    """
+    Node class data representation
+    [data , next] -> [data , next] -> [data, next] -> None
+    """
     def __init__(self, data):
         self.data = data
         self.next = None
