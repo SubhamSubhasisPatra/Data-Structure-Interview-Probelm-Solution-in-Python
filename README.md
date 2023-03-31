@@ -1,4 +1,29 @@
-# Data-Structure-Interview-Probelm-Solution-in-Python
+# Data-Structure-Interview-Problem-Solution-in-Python
 
-- Linked List
-- Tree
+## Directory Structure 
+
+```
+project/
+├── src/
+│   ├── linked_list
+│   ├── tree
+└── tests/
+    ├── test_linked_list
+    ├── ...
+```
+
+```
+┌───────────┐     imports     ┌─────────────┐
+│ test_main ├───┬───────────►│    main.py   │
+└───────────┘   │             └─────────────┘
+                │
+┌────────────────────┐   imports   ┌───────────────┐
+│ test_linked_list.py ├───┬───────►│ linked_list.py│
+└────────────────────┘   │         └───────────────┘
+                          │
+                     defines
+                          │
+                 ┌───────────────┐
+                 │ linked_list.py│
+                 └───────────────┘
+```
