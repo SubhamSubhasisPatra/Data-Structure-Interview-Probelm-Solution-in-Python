@@ -1,14 +1,8 @@
-counter = 0
-
-
-def show():
-    global counter
-    if counter == 3:
-        return
-    print(counter)
-    counter += 1
-    show()
-
+def factorial(n):
+    if n == 0:
+        return 1
+    else:
+        return n * factorial(n-1)
 
 if __name__ == '__main__':
-    show()
+    print(factorial(5))
