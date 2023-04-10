@@ -1,4 +1,4 @@
-# Data-Structure-Interview-Problem-Solution-in-Python
+# DSA in Python
 
 ## Directory Structure 
 
