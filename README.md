@@ -1,6 +1,6 @@
 # DSA in Python
 
-## Directory Structure 
+## Code Structure 
 
 ```
 project/
