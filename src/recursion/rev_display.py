@@ -1,3 +1,17 @@
+""""
+
+   5
+  /
+ 4
+/
+3
+\
+ 2
+  \
+   1
+
+""""
+
 def rev_display(N):
     if N < 1:
         return
