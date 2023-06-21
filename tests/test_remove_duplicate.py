@@ -3,6 +3,9 @@ from src.Array.remove_duplicate import remove_duplicates
 
 
 class TestRemoveDuplicates(TestCase):
+    """
+    All the UT Covered for this problem
+    """
     def test_with_array_of_zeros_and_ones(self):
         arr = [0, 0, 1, 1, 1, 2, 2, 3, 3, 4]
         expected = 9
