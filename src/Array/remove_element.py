@@ -1,8 +1,9 @@
-def move_to_end(arr, index, ele):
-    pass
-
-
 def remove_element(nums, element):
+    """
+    Args:
+        nums: array of positive number
+        element: integer number
+    """
     counter = 0
 
     for index in range(len(nums) - 1):
@@ -10,7 +11,6 @@ def remove_element(nums, element):
         if cur_number == element:
             counter += 1
             nums.pop(index)
-            nums.append(cur_number)
 
             # move the element to the end of the arr but the condition is
             # how to also take care of the number which are not same as the given number
