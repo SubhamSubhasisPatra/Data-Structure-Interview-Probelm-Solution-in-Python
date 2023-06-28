@@ -1,12 +1,12 @@
 
 def remove_element(nums, element):
     c = 0
-    for i in range(nums):
+    for i in nums:
         if i != element:
             nums[c] = i  
             c += 1 
             
-    print(nums, counter)
+    print(nums, c)
 
 
 if __name__ == '__main__':
