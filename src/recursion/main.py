@@ -1,9 +1,12 @@
 """
- When the function calls itself is called as a recursive call .. 
+ When the function calls itself is called a recursive call. 
 
 """
 
 def factorial(n):
+    """
+    Gives the factorial of number
+    """
     if n == 0:
         return 1
     else:

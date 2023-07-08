@@ -5,6 +5,8 @@ def find_duplicate(arr):
             return i
         else:
             hashMap[i] = 1
+
+
 def remove_duplicate(arr):
     return set(arr)
 
