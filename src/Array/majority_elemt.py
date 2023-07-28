@@ -1,21 +1,9 @@
-"""
-
-eg arr [3,2,3], n = 3 
-
-if n/2 = 1.5 , if any number has a count more than that , that is the major element 
-
-"""
+from collections import Counter
 
 
-def majorityElement( nums: List[int]) -> int:
-    majorCount = len(nums) / 2 
-    count = {}
-    
-    for i in nums:
-        if i in count:
-            count[i] += 1 
-        else:
-            count[i] = 1 
-        # find the major Count 
-        if count[i] >= majorCount:
-            return i 
+def majorityElement(nums: list[int]) -> int:
+    majorCount = len(nums) / 2
+    count = Counter(nums)
+
+    # Returns the element in count if its occurrence is more than majorCount
+    return next((k for k, v in count.items() if v > majorCount), None)
