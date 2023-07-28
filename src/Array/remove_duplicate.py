@@ -1,5 +1,11 @@
 
 def remove_duplicates(arr):
+    """
+    Removes duplicates from an array and returns the count of non-duplicate elements.
+
+    :param arr: The input array from which duplicates will be removed.
+    :return: The count of non-duplicate elements in the input array.
+    """
     c = 0
 
     for i in arr:
