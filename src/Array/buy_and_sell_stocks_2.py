@@ -21,22 +21,22 @@ def maxProfit(prices):
     Note: The logic assumes that you can only buy and sell the stock once per day. Any transaction fees or restrictions are not taken into account.
 
     """
+
     max_profit = 0
     index = 0
 
-    # index => I want buy in that day
-    # sell => I want to sell in that day
-
     while index < len(prices) - 1:
-        if prices[index] <= prices[index + 1]:
 
+        if prices[index] <= prices[index + 1]:
             next_index = index + 1
-            while next_index < len(prices) - 1 and prices[next_index] < prices[next_index + 1]:
-                next_index = next_index + 1
+
+            while next_index < len(prices) and prices[next_index] < prices[next_index + 1]:
+                next_index += 1
+
             max_profit += prices[next_index] - prices[index]
             index = next_index
-
         index += 1
+
     return max_profit
 
 
