@@ -1,13 +1,13 @@
-def len_of_last_word(s):
+def len_of_last_word(s: str):
     return len(s.strip().split(' ')[-1])
 
-def optimized_len_count(s):
 
+def optimized_len_count(s: str):
     size = len(s)
-    max_count  = 0
+    max_count = 0
     flag = False
 
-    for i in range(size - 1  , 0 , -1):
+    for i in range(size - 1, 0, -1):
 
         if s[i] == ' ' and flag:
             break
