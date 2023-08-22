@@ -44,7 +44,6 @@ if __name__ == '__main__':
     print(kth_factor(7, 2))
     print(kth_factor(4, 4))
 
-
     print(kth_factor_in_linear(12, 3))
     print(kth_factor_in_linear(7, 2))
     print(kth_factor_in_linear(4, 4))
