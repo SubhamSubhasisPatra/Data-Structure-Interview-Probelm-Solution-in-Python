@@ -1,4 +1,21 @@
 def min_size_subarray_sum(arr, target):
+    """
+    :param arr: a list of integers representing the input array
+    :param target: an integer representing the target sum
+    :return: minimum length of a subarray in arr whose sum is greater than or equal to target
+
+    This method takes an array of integers, arr, and a target sum, target, as input. It returns the minimum length of a subarray in arr whose sum is greater than or equal to target.
+
+    Example usage:
+    ---------------
+    arr = [2, 3, 1, 2, 4, 3]
+    target = 7
+    min_size_subarray_sum(arr, target)  # Returns 2
+
+    Explanation:
+    ---------------
+    In the given example, the subarray [4, 3] has a sum of 7 which is equal to the target. The length of this subarray is 2, which is the minimum possible length for a subarray with a sum of 7.
+    """
     if not arr or not target: return 0
     count, i, j, n, res = 0, 0, 0, len(arr), float('inf')
     while j < n:
