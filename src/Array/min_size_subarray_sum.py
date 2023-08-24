@@ -2,6 +2,7 @@
 LEETCODE -> https://leetcode.com/problems/minimum-size-subarray-sum/?envType=study-plan-v2&envId=top-interview-150
 """
 
+
 def min_size_subarray_sum(arr, target):
     """
     :param arr: a list of integers representing the input array
