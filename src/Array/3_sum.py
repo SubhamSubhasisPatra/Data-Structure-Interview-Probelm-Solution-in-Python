@@ -22,26 +22,22 @@ def three_sum(arr):
     print(result)
 
 
-
-
-
 def three_sum_optimal(nums):
-    
     # APPROCH - 1
-    
+
     # loop thorught arr i , arr i + 1 arr i + 2 
     # Sum all 3 element , 
     # Create a hash to avoid duplicate 
     # Store to result arr 
-    
+
     # APPROCH 2 
-    
+
     # Lopp arr i and arr i + 1 
     # keep the inbetwen element of arr i and i + 1 in hash set 
     # target = - ( sum arr i + arr i + 1 )
     # Create a hash to avoid duplicate 
     # Store to result arr 
-    
+
     # APPROCH 3 
     # Use Two pointer and one basic Start point 
     # Sort the array 
@@ -58,36 +54,38 @@ def three_sum_optimal(nums):
     # Move to the next new element 
     # while j < k and num[j] == num[j - 1] : j += 1;
     # while j < k and num[k] == num[k + 1] : k -= 1;
-    
+
     result = []
     nums.sort()
     for i in range(len(nums)):
-        
+
         if i > 0 and nums[i] == nums[i - 1]: continue
-        
-        j = i+ 1 
-        k = len(nums) - 1 
-        
-        while j < k :
-            
+
+        j = i + 1
+        k = len(nums) - 1
+
+        while j < k:
+
             target = nums[i] + nums[j] + nums[k]
-            
-            if target < 0 : j += 1 
-            elif target > 0 : k -= 1
+
+            if target < 0:
+                j += 1
+            elif target > 0:
+                k -= 1
             else:
                 result.append([nums[i], nums[j], nums[k]])
                 j += 1
-                k -= 1 
-                
-                while j < k and nums[j] == nums[j-1] : j += 1
-                while j < k and nums[k] == nums[k + 1]: k -= 1 
+                k -= 1
+
+                while j < k and nums[j] == nums[j - 1]: j += 1
+                while j < k and nums[k] == nums[k + 1]: k -= 1
     print(result)
 
 
+three_sum_optimal([-1, 0, 1, 2, -1, -4])  # [[-1, 0, 1], [-1, -1, 2]]
+three_sum_optimal([-1, 0, 1])  # [[0, 0, 0]]
+three_sum_optimal([-2, 0, 0, 2, 2])  # [[-2,0,2]]...
 
-three_sum_optimal([-1, 0, 1, 2, -1, -4]) # [[-1, 0, 1], [-1, -1, 2]]
-three_sum_optimal([-1,0,1]) # [[0, 0, 0]]
-three_sum_optimal([-2,0,0,2,2]) #[[-2,0,2]]...
 
 def optimal_3_sum(nums):
     nums = sorted(nums)
@@ -99,7 +97,7 @@ def optimal_3_sum(nums):
 
         target = 0 - nums[i]
 
-        while l < r :
+        while l < r:
             if nums[l] + nums[r] == target:
                 res.add((nums[i], nums[l], nums[r]))
                 l += 1
