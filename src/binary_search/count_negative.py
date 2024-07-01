@@ -1,5 +1,3 @@
-
-
 def binary_search(arr):
     left = 0
     right = len(arr) - 1
@@ -8,16 +6,18 @@ def binary_search(arr):
 
     while left < right:
 
-        if arr[mid] < 0
+        if arr[mid] < 0:
+            pass
+
 
 def total_negative(arr):
+    pass
 
-    # find the total length
-    # binary search to find the index where the negative start
-    # subtract from the arr len
+# find the total length
+# binary search to find the index where the negative start
+# subtract from the arr len
 
 def count_negative(matrix):
-
     negative_count = 0
 
     for arr in matrix:
@@ -25,6 +25,7 @@ def count_negative(matrix):
 
     print(negative_count)
 
+
 if __name__ == '__main__':
-    matrix = [[4,3,2,-1],[3,2,1,-1],[1,1,-1,-2],[-1,-1,-2,-3]]
+    matrix = [[4, 3, 2, -1], [3, 2, 1, -1], [1, 1, -1, -2], [-1, -1, -2, -3]]
     count_negative(matrix)
